@@ -20,6 +20,7 @@ app.UseAuthorization();
 
 app.MapStaticAssets();
 
+//How does this route difinition differ from what we learned in Chapter 7, for routing in a specific area?
 app.MapControllerRoute(
     name: "areas",
     pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
